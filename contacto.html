@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SimpleTech - Inicio</title>
+    <title>SimpleTech - Contacto</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,17 +21,20 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h2>Transforma tu futuro con la tecnología</h2>
-            <p>Ofrecemos soluciones digitales para tu negocio.</p>
-        </section>
-        <section class="servicios-preview">
-            <h3>Servicios Destacados</h3>
-            <ul>
-                <li><a href="desarrollo-web.html">Desarrollo Web</a></li>
-                <li><a href="consultoria-cloud.html">Consultoría Cloud</a></li>
-                <li><a href="soporte-tecnico.html">Soporte Técnico</a></li>
-            </ul>
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <form action="mailto:customer.service@simpletech.com" method="post" enctype="text/plain">
+                <label for="email">Tu Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="problema">Tipo de Problema:</label>
+                <input type="text" id="problema" name="problema" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
@@ -39,4 +42,3 @@
     </footer>
 </body>
 </html>
-
